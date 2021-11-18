@@ -39,55 +39,43 @@
                                 <form method="get">
 
                                     <ul class="form__items">
-                                                                                    <li class="form__item">
-
-                                                <label for="homer">
-                                                    Homer Simpson                                                </label>
-
-                                                <input id="homer" type="checkbox" name="homer"
-                                                                                                >                                
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="marge">
-                                                    Marge Simpson                                                </label>
-
-                                                <input id="marge" type="checkbox" name="marge"
-                                                                                                >                                
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="bart">
-                                                    Bart Simpson                                                </label>
-
-                                                <input id="bart" type="checkbox" name="bart"
-                                                                                                >                                
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="lisa">
-                                                    Lisa Simpson                                                </label>
-
-                                                <input id="lisa" type="checkbox" name="lisa"
-                                                                                                >                                
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="maggie">
-                                                    Maggie Simpson                                                </label>
-
-                                                <input id="maggie" type="checkbox" name="maggie"
-                                                                                                >                                
-                                            </li>
-                                                                                    <li class="form__item">
-
-                                                <label for="moe">
-                                                    Moe Szyslak                                                </label>
-
-                                                <input id="moe" type="checkbox" name="moe"
-                                                                                                >                                
-                                            </li>
-                                                                            </ul>
+                                        <li class="form__item">
+                                            <label for="homer">
+                                                Homer Simpson
+                                            </label>
+                                            <input id="homer" type="checkbox" name="homer">                                
+                                        </li>
+                                        <li class="form__item">
+                                            <label for="marge">
+                                                Marge Simpson
+                                            </label>
+                                            <input id="marge" type="checkbox" name="marge">                                
+                                        </li>
+                                        <li class="form__item">
+                                            <label for="bart">
+                                                Bart Simpson
+                                            </label>
+                                            <input id="bart" type="checkbox" name="bart">                                
+                                        </li>
+                                        <li class="form__item">
+                                            <label for="lisa">
+                                                Lisa Simpson                                                
+                                            </label>
+                                            <input id="lisa" type="checkbox" name="lisa">                                
+                                        </li>
+                                        <li class="form__item">
+                                            <label for="maggie">
+                                                Maggie Simpson 
+                                            </label>
+                                            <input id="maggie" type="checkbox" name="maggie">                                
+                                        </li>
+                                        <li class="form__item">
+                                            <label for="moe">
+                                                Moe 
+                                            </label>
+                                            <input id="moe" type="checkbox" name="moe">                                
+                                        </li>
+                                    </ul>
 
                                     <input class="form__button" type="submit" value="Show Characters">
 
@@ -102,7 +90,7 @@
                 <div class="characters__container layout-container">
                     <div class="characters__row layout-row">
                         <ul class="characters__items">
-                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                        </ul>
                     </div>
                 </div>
 
