@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<!-- 
+    Document Details:
+    Course:         DGL-123 - Intro To PHP
+    Module:         Final Project
+    Filename:       index.php
+    Author:         Iliyan Darediya
+    Date:           18 Nov 2021
+ -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +17,7 @@
 </head>
 <body>
     <header id="masthead" class="site-header layout-container">
-        <a href="/">
+        <a href="http://localhost/pages/DGL123--final-project">
             <img 
                 class="site-header__logo" 
                 src="https://simpsons.img100.chrisgeelhoed.com/images/logo.svg" 
@@ -43,37 +52,67 @@
                                             <label for="homer">
                                                 Homer Simpson
                                             </label>
-                                            <input id="homer" type="checkbox" name="homer">                                
+                                            <input 
+                                                id="homer" 
+                                                type="checkbox" 
+                                                name="homer" 
+                                                <?php if(isset($_GET['homer'])) echo "checked='checked'"; ?> 
+                                            >                                
                                         </li>
                                         <li class="form__item">
                                             <label for="marge">
                                                 Marge Simpson
                                             </label>
-                                            <input id="marge" type="checkbox" name="marge">                                
+                                            <input 
+                                                id="marge" 
+                                                type="checkbox" 
+                                                name="marge"
+                                                <?php if(isset($_GET['marge'])) echo "checked='checked'"; ?>
+                                            >                                
                                         </li>
                                         <li class="form__item">
                                             <label for="bart">
                                                 Bart Simpson
                                             </label>
-                                            <input id="bart" type="checkbox" name="bart">                                
+                                            <input 
+                                                id="bart" 
+                                                type="checkbox" 
+                                                name="bart"
+                                                <?php if(isset($_GET['bart'])) echo "checked='checked'"; ?>
+                                            >                                
                                         </li>
                                         <li class="form__item">
                                             <label for="lisa">
                                                 Lisa Simpson                                                
                                             </label>
-                                            <input id="lisa" type="checkbox" name="lisa">                                
+                                            <input 
+                                                id="lisa" 
+                                                type="checkbox" 
+                                                name="lisa"
+                                                <?php if(isset($_GET['lisa'])) echo "checked='checked'"; ?>
+                                            >                                
                                         </li>
                                         <li class="form__item">
                                             <label for="maggie">
                                                 Maggie Simpson 
                                             </label>
-                                            <input id="maggie" type="checkbox" name="maggie">                                
+                                            <input 
+                                                id="maggie" 
+                                                type="checkbox" 
+                                                name="maggie"
+                                                <?php if(isset($_GET['maggie'])) echo "checked='checked'"; ?>
+                                                >                                
                                         </li>
                                         <li class="form__item">
                                             <label for="moe">
                                                 Moe 
                                             </label>
-                                            <input id="moe" type="checkbox" name="moe">                                
+                                            <input 
+                                                id="moe" 
+                                                type="checkbox" 
+                                                name="moe"
+                                                <?php if(isset($_GET['moe'])) echo "checked='checked'"; ?>
+                                            >                                
                                         </li>
                                     </ul>
 
@@ -90,6 +129,7 @@
                 <div class="characters__container layout-container">
                     <div class="characters__row layout-row">
                         <ul class="characters__items">
+                            <?php require'characters.php'?>
                         </ul>
                     </div>
                 </div>
@@ -97,7 +137,5 @@
             </div>
         </div>
     </div>
-
-
 </body>
 </html>
