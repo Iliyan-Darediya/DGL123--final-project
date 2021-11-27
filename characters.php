@@ -39,7 +39,7 @@ function createDiv($name,$array){
     foreach($array as $character){
         //find the element we want to work with
         if($name == strtolower($character['first_name'])){
-            //echo the image and info by getting the data from the provided array
+            //create a div with the image name values
             $div = '
             <li class="characters__itemContainer">
                 <div class="characters__item">
@@ -53,20 +53,25 @@ function createDiv($name,$array){
                             '.$character['first_name'].' '.$character['last_name'].'
                         </h3>
             ';
+            //add age, occupation and voiced by values to the div
             $div.= add('age',$character,'Age');
             $div.= add('occupation',$character,'Occupation');
             $div.= add('voiced_by',$character,'Voiced by');
             
-            
+            //Close the divs and list items
             $div.='</div></div></li>';
+            //return the div
             return $div;
         }
     }
 }
+//add will take in the value, array and elementName as parameter
 function add($value,$array,$elementName){
+    //Check if the array key exists and is not empty
     if(array_key_exists($value,$array) && !empty($array[$value])){
+        //return a div with the correct value and element name
         return'
-        <div class="characters__occupation characters__attribute">
+        <div class="characters__'.$value.' characters__attribute">
             <b>'.$elementName.':</b>'.$array[$value].'
         </div>
         ';
