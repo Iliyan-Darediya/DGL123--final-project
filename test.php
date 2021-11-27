@@ -3,7 +3,7 @@
     Document Details:
     Course:         DGL-123 - Intro To PHP
     Module:         Final Project
-    Filename:       index.php
+    Filename:       test.php
     Author:         Iliyan Darediya
     Date:           18 Nov 2021
  -->
