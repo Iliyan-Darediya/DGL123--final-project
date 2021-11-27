@@ -40,7 +40,7 @@ function createDiv($name,$array){
         //find the element we want to work with
         if($name == strtolower($character['first_name'])){
             //create a div with the image name values
-            $div = '
+            $li = '
             <li class="characters__itemContainer">
                 <div class="characters__item">
                     <img 
@@ -54,14 +54,14 @@ function createDiv($name,$array){
                         </h3>
             ';
             //add age, occupation and voiced by values to the div
-            $div.= add('age',$character,'Age');
-            $div.= add('occupation',$character,'Occupation');
-            $div.= add('voiced_by',$character,'Voiced by');
+            $li.= add('age',$character,'Age');
+            $li.= add('occupation',$character,'Occupation');
+            $li.= add('voiced_by',$character,'Voiced by');
             
             //Close the divs and list items
-            $div.='</div></div></li>';
+            $li.='</div></div></li>';
             //return the div
-            return $div;
+            return $li;
         }
     }
 }
