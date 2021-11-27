@@ -45,7 +45,7 @@
             }
         }
         
-        
+        //Failed test because string isn't exactly the same
         $HomerOutput = '
         <li class="characters__itemContainer">
             <div class="characters__item">
@@ -67,12 +67,22 @@
             </div>
         </li>
         ';
+        testCreateDiv('homer',$characersArray,$HomerOutput);
+
+        //Pass test
         $HomerAdd = '
         <div class="characters__age characters__attribute">
             <b>Age:</b>40
         </div>
         ';
-        testCreateDiv('homer',$characersArray,$HomerOutput);
+        testAdd('age',$characersArray['homer'],'Age',$HomerAdd);
+
+        //Failed test because of adding space between Age and 40
+        $HomerAdd = '
+        <div class="characters__age characters__attribute">
+            <b>Age:</b> 40
+        </div>
+        ';
         testAdd('age',$characersArray['homer'],'Age',$HomerAdd);
         
         //End of testing
